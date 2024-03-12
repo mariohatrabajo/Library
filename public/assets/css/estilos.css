@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;500;700&family=Playfair:opsz,wght@5..1200,300;5..1200,400;5..1200,600&display=swap');
+
+:root {
+    --azul-oscuro: #2f4a83;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Playfair;
+    font-size: 1.1rem;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(226, 233, 236);
+}
+
+h1 {
+    width: 70%;
+    margin: 10px 0;
+}
+
+/* Busqueda */
+.busqueda {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    margin-bottom: 5vh;
+    width: 70%;
+}
+
+.inputBusqueda {
+    flex: 15;
+}
+
+/* Tabla */
+table {
+    padding: 30px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 2px solid var(--azul-oscuro);
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: rgb(208, 216, 219);
+}
+
+thead{
+    display: block;
+}
+
+.scroll {
+    overflow-y: scroll;
+    display: block;
+    height: 65vh;
+}
+
+tbody {
+    display: block;
+}
+
+.titulo {
+    width: 200px;
+}
+
+.genero, .acciones {
+    width: 100px;
+}
+
+.descripcion {
+    width: 500px;
+}
+
+.autor {
+    width: 150px;
+}
+
+/* Nuevo libro */
+.input {
+    background-color: rgb(234, 244, 250);
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 3px;
+    width: 90%;
+    outline: none;
+    height: 25px;
+    font-family: Playfair;
+    font-size: 1.1rem;
+}
+
+.input:focus {
+    border: 1px solid rgb(103, 212, 226);
+}
+
+/* Botones */
+.boton {
+    width: 44%;
+    height: 25px;
+    border: none;
+    margin: 0 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* ---- Pagina de modificar ---- */
+textarea {
+    resize: none;
+    height: 4rem;
+    background-color: rgb(234, 244, 250);
+    border: none;
+    border-bottom: 2px solid var(--azul-oscuro);
+    border-radius: 3px;
+    width: 90%;
+    outline: none;
+    font-family: Playfair;
+    font-size: 1.1rem;
+}
+
+textarea:focus {
+    border-bottom: 2px solid rgb(103, 212, 226);
+}
+
+.inputMod {
+    background-color: rgb(234, 244, 250);
+    border: none;
+    border-bottom: 2px solid var(--azul-oscuro);
+    border-radius: 3px;
+    width: 100%;
+    outline: none;
+    height: 25px;
+    font-family: Playfair;
+    font-size: 1.1rem;
+}
+
+.inputMod:focus {
+    border-bottom: 2px solid rgb(103, 212, 226);
+}

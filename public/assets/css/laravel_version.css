@@ -1,0 +1,131 @@
+:root {
+    --dark-blue: #2f4a83;
+}
+
+/* Header */
+header {
+    margin: 20px;
+    padding: 20px;
+    /* Deco */
+    border: 2px solid var(--dark-blue);
+    border-radius: 10px;
+    /* Position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Flex Box */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+header a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Tabla */
+table, tr, th, td {
+    box-sizing: border-box;
+}
+
+th {
+    text-align: left;
+}
+
+.w300 {
+    width: 300px;
+}
+
+.w200 {
+    width: 200px;
+}
+
+.w150 {
+    width: 150px;
+}
+
+.w100 {
+    width: 100px;
+}
+
+/* Botones */
+.boton {
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-family: Playfair;
+    transition: 200ms;
+}
+
+input.boton, button.boton {
+    width: 30px;
+    height: 30px;
+}
+
+.anadir {
+    background-color: lightgreen;
+    transition: 200ms;
+}
+.anadir:hover {
+    background-color: rgb(120, 208, 120);
+}
+
+.buscar {
+    background-color: rgb(85, 163, 253);
+    transition: 200ms;
+}
+.buscar:hover {
+    background-color: rgb(73, 123, 231);
+}
+
+.eliminar {
+    background-color: rgb(253, 130, 85);
+    transition: 200ms;
+}
+.eliminar:hover {
+    background-color: rgb(231, 97, 73);
+}
+
+.editar {
+    background-color: rgb(253, 208, 85);
+    transition: 200ms;
+}
+.editar:hover {
+    background-color: rgb(231, 181, 73);
+}
+
+form {
+    max-width: 70%;
+}
+
+.rotate45 {
+    display: block;
+    transform: rotate(-45deg);
+    font-size: 1.2rem;
+}
+
+.acciones {
+    width: 150px;
+}
+
+.acciones div {
+    /* Flex Box */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
